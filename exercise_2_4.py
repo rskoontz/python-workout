@@ -6,10 +6,12 @@ output = []
 
 for letter in user_word_str:
     if letter in 'aeiou':
-        output.append((user_word_str.replace(f"{letter}", f"ub{letter}")))
+        output.append((user_word_str.replace(f'{letter}', f'ub{letter}')))
     else:
         output.append(letter)
 print(''.join(output))
+
+# need to spend more time on the str replace, every replace that iterates, new user_word_str at end
 
 
 
