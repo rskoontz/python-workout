@@ -10,6 +10,15 @@ def main():
     listtwo = [4,5,6]
     mysum(listone, listtwo)
 
+def book_ex(*items):
+    if not items:
+        return items
+    output = items[0]
+    for item in items[1:]:
+        output += item
+    return output
+
+
 
 if __name__ == "__main__":
     main()
